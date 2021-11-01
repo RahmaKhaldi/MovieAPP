@@ -1,8 +1,9 @@
 import MovieCard from "./MovieCard";
-
+import AddMovie from "./AddMovie";
 function MovieList({ movies,searchRating ,searchTitle}) {
   return (
     <div className="stylediv">
+     
       {movies.filter((movie)  => movie.title
               .toLowerCase()
               .includes(searchTitle.toLowerCase().trim())&&
